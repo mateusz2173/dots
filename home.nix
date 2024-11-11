@@ -12,6 +12,7 @@
     btop
     neofetch
     jq
+    tmux
   ];
 
   imports = [
@@ -23,7 +24,7 @@
   };
 
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "nvim";
   };
 
   programs.home-manager.enable = true;

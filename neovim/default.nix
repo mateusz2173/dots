@@ -92,7 +92,13 @@ in
 	  border = "rounded";
 	};
       };
-      lsp.enable = true;
+      lsp = {
+	enable = true;
+	servers = {
+	  nil_ls.enable = true;
+	  nixd.enable = true;
+	};
+      };
       lspkind = {
 	enable = true;
 	cmp = {
